@@ -1,0 +1,7 @@
+Method: GET Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:19:11 Success: false - Message: Kunde inte hitta resursen /api/v1/blockchain/mine
+Method: GET Url: /api/v1/mine Date: 2024-05-03 Time: 14:19:21 Success: false - Message: Kunde inte hitta resursen /api/v1/mine
+Method: POST Url: /api/v1/mine Date: 2024-05-03 Time: 14:19:34 Success: false - Message: Kunde inte hitta resursen /api/v1/mine
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:33:51 Success: undefined - Message: tickets.push is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:36:05 Success: undefined - Message: fs is not defined
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:36:29 Success: undefined - Message: ENOENT: no such file or directory, open 'C:\Users\annic\OneDrive\Desktop\Moha skola\BCU23\Backend-Node\Uppgift1\data\tickets.json'
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:38:15 Success: undefined - Message: fileHandler is not defined
