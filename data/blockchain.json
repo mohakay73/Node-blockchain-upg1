@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": 1714852962251,
+    "blockIndex": 1,
+    "previousBlockHash": "0",
+    "currentBlockHash": "0",
+    "data": []
+  },
+  {
+    "timestamp": 1714852966633,
+    "blockIndex": 2,
+    "previousBlockHash": "0",
+    "currentBlockHash": "5d9d7c3df1080b306e91d831b72ea624d56e71dc8a402025c95adfaadcd0ed0c",
+    "data": {}
+  }
+]

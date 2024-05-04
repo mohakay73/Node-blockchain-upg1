@@ -2,6 +2,7 @@ import { blockchain } from '../startup.mjs';
 import ResponseModel from '../utilities/ResponseModel.mjs';
 import tickets from '../data/tickets.json' with { type: 'json' };
 import fileHandler from '../utilities/fileHandler.mjs'
+import { v4 as uuidv4 } from 'uuid'; 
 
 const getBlockchain = (req, res, next) => {
   res
@@ -33,10 +34,24 @@ const createBlock = (req, res, next) => {
     data,
     difficulty
   );
-   tickets.push(req.body);
-  fileHandler('data', 'tickets.json', tickets);
+   
+  const ticketId = uuidv4().replaceAll('-', '');
 
-  res.status(201).json(new ResponseModel({ statusCode: 201, data: req.body }));
+ 
+  const newTicket = {
+    id: ticketId,
+    ...req.body
+  };
+
+  
+  tickets.push(newTicket);
+
+  fileHandler('data', 'tickets.json', tickets);
+   fileHandler('data', 'blockchain.json', blockchain.chain);
+
+  res.status(201).json(new ResponseModel({ statusCode: 201, data: newTicket }));
 };
+
+
 
 export { createBlock, getBlockchain };

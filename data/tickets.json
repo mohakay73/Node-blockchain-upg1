@@ -1,1 +1,11 @@
-[{"ticket":"ticket"}]
+[
+  {
+    "id": "fddd16a2643c483d9f34a62e0e6431f7",
+    "holderName": "J.D",
+    "seatNumber": "A101",
+    "seatSection": "VIP",
+    "events": [
+      { "eventName": "Concert", "eventDate": "2024-05-10", "venue": "Stadium" }
+    ]
+  }
+]

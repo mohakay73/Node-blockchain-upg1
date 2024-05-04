@@ -5,3 +5,9 @@ Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:33:51 Succes
 Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:36:05 Success: undefined - Message: fs is not defined
 Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:36:29 Success: undefined - Message: ENOENT: no such file or directory, open 'C:\Users\annic\OneDrive\Desktop\Moha skola\BCU23\Backend-Node\Uppgift1\data\tickets.json'
 Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-03 Time: 14:38:15 Success: undefined - Message: fileHandler is not defined
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:41:44 Success: undefined - Message: Unexpected token ']', ..."    },
+  ]" is not valid JSON
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:42:09 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 206 (line 11 column 3)
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:42:26 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 204 (line 11 column 3)
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:43:37 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 204 (line 11 column 3)
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:43:55 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 206 (line 11 column 3)
