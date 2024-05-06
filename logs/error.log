@@ -11,3 +11,44 @@ Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:42:09 Succes
 Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:42:26 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 204 (line 11 column 3)
 Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:43:37 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 204 (line 11 column 3)
 Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-04 Time: 21:43:55 Success: undefined - Message: Expected ',' or '}' after property value in JSON at position 206 (line 11 column 3)
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 20:42:18 Success: undefined - Message: __dirname is not defined
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 20:44:11 Success: undefined - Message: global__appdir is not defined
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 20:50:56 Success: undefined - Message: Class constructor FileHandler cannot be invoked without 'new'
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 20:53:01 Success: undefined - Message: Class constructor FileHandler cannot be invoked without 'new'
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 20:58:07 Success: undefined - Message: Class constructor FileHandler cannot be invoked without 'new'
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:24:52 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:24:53 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:28:06 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:28:07 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:28:08 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:28:08 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:50:08 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:50:09 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: POST Url: /api/v1/blockchain/mine Date: 2024-05-06 Time: 21:50:10 Success: undefined - Message: blockchain.writeToFile is not a function
+Method: GET Url: /api/v1/:index Date: 5/6/2024 Time: 10:02:51 PM Success: false - Message: Couldn't find the resource /api/v1/:index
+Method: GET Url: /api/v1/blockchain/:index Date: 5/6/2024 Time: 10:03:19 PM Success: false - Message: Couldn't find the block with index: NaN
+Method: GET Url: /api/v1/blockchain/:index Date: 5/6/2024 Time: 10:03:23 PM Success: false - Message: Couldn't find the block with index: NaN
+Method: GET Url: /api/v1/blockchain/:index Date: 5/6/2024 Time: 10:03:40 PM Success: undefined - Message: Unexpected token 'i', "index:2" is not valid JSON
+Method: GET Url: /api/v1/blockchain/:index Date: 5/6/2024 Time: 10:03:48 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /5 Date: 5/6/2024 Time: 10:05:05 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /5 Date: 5/6/2024 Time: 10:05:06 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /6 Date: 5/6/2024 Time: 10:05:10 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain/:index Date: 5/6/2024 Time: 10:05:19 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain Date: 5/6/2024 Time: 10:05:24 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain Date: 5/6/2024 Time: 10:05:32 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain Date: 5/6/2024 Time: 10:05:41 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:05:54 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:05:56 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:05:56 PM Success: undefined - Message: Unexpected token '"', ""index:2"
+" is not valid JSON
+Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:06:00 PM Success: undefined - Message: Unexpected end of JSON input

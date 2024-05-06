@@ -1,16 +1,39 @@
-[
-  {
-    "timestamp": 1714852962251,
-    "blockIndex": 1,
-    "previousBlockHash": "0",
-    "currentBlockHash": "0",
-    "data": []
-  },
-  {
-    "timestamp": 1714852966633,
-    "blockIndex": 2,
-    "previousBlockHash": "0",
-    "currentBlockHash": "5d9d7c3df1080b306e91d831b72ea624d56e71dc8a402025c95adfaadcd0ed0c",
-    "data": {}
-  }
-]
+{
+  "chain": [
+    {
+      "timestamp": 1715025706667,
+      "blockIndex": 1,
+      "previousBlockHash": "0",
+      "currentBlockHash": "0",
+      "data": []
+    },
+    {
+      "timestamp": 1715025723980,
+      "blockIndex": 2,
+      "previousBlockHash": "0",
+      "currentBlockHash": "84c02251ca14bd3de281258c8605797f32df430bb814ce474c246c98af9be59b",
+      "data": {}
+    },
+    {
+      "timestamp": 1715025727416,
+      "blockIndex": 3,
+      "previousBlockHash": "84c02251ca14bd3de281258c8605797f32df430bb814ce474c246c98af9be59b",
+      "currentBlockHash": "3c43757e5a531bcf9792b19a6abb75cc02886a4ee82516a386c4b15d119d2918",
+      "data": {}
+    },
+    {
+      "timestamp": 1715025728728,
+      "blockIndex": 4,
+      "previousBlockHash": "3c43757e5a531bcf9792b19a6abb75cc02886a4ee82516a386c4b15d119d2918",
+      "currentBlockHash": "e68c2cfe36c5c4300e7772763e574648ee5669f137aeca941081144bed5a88cc",
+      "data": {}
+    },
+    {
+      "timestamp": 1715025938809,
+      "blockIndex": 5,
+      "previousBlockHash": "e68c2cfe36c5c4300e7772763e574648ee5669f137aeca941081144bed5a88cc",
+      "currentBlockHash": "2241f4981ea41a8d338355570abe4c4f9a6038752546ec12d10b214068dbf180",
+      "data": {}
+    }
+  ]
+}

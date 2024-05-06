@@ -1,3 +1,9 @@
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 import Blockchain from './models/Blockchain.mjs';
 
-export const blockchain = new Blockchain();
+global.__appdir = dirname(fileURLToPath(import.meta.url));
+
+const blockchain = new Blockchain();
+
+export { blockchain };

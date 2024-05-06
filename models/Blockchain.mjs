@@ -1,10 +1,18 @@
 import { createHash } from '../utilities/crypto-lib.mjs';
 import Block from './Block.mjs';
+import FileHandler from '../utilities/fileHandler.mjs';
+import { handleError, log } from '../middleware/errorHandler.mjs';
 
 export default class Blockchain {
   constructor() {
-    this.chain = [];
-    this.createBlock(Date.now(), '0', '0', []);
+    this.fileHandler = new FileHandler('data', 'blockchain.json');
+    const data = this.fileHandler.read(true);
+    if (data && data.length > 0) {
+      this.chain = data;
+    } else {
+      this.chain = [];
+      this.createBlock(Date.now(), '0', '0', []);
+    }
   }
 
   createBlock(
@@ -14,6 +22,10 @@ export default class Blockchain {
     data,
     difficulty
   ) {
+    if (typeof data !== 'object') {
+      handleError('Data must be an object');
+    }
+
     const block = new Block(
       timestamp,
       this.chain.length + 1,
@@ -24,12 +36,20 @@ export default class Blockchain {
     );
 
     this.chain.push(block);
+    log('Block created');
 
     return block;
   }
+  writeToFile() {
+    this.fileHandler.write(this.chain);
+  }
+
+  getAllBlocks() {
+    return this.chain;
+  }
 
   getLastBlock() {
-    return this.chain.at(-1);
+    return this.chain[this.chain.length - 1];
   }
 
   hashBlock(timestamp, previousBlockHash, currentBlockData, nonce, difficulty) {

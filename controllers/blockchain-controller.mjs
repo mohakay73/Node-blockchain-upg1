@@ -1,8 +1,5 @@
 import { blockchain } from '../startup.mjs';
 import ResponseModel from '../utilities/ResponseModel.mjs';
-import tickets from '../data/tickets.json' with { type: 'json' };
-import fileHandler from '../utilities/fileHandler.mjs'
-import { v4 as uuidv4 } from 'uuid'; 
 
 const getBlockchain = (req, res, next) => {
   res
@@ -10,7 +7,6 @@ const getBlockchain = (req, res, next) => {
     .json(new ResponseModel({ statusCode: 200, data: blockchain }));
 };
 
-// endpoint .../mine.
 const createBlock = (req, res, next) => {
   const lastBlock = blockchain.getLastBlock();
   const data = req.body;
@@ -34,24 +30,19 @@ const createBlock = (req, res, next) => {
     data,
     difficulty
   );
-   
-  const ticketId = uuidv4().replaceAll('-', '');
 
- 
-  const newTicket = {
-    id: ticketId,
-    ...req.body
-  };
-
-  
-  tickets.push(newTicket);
-
-  fileHandler('data', 'tickets.json', tickets);
-   fileHandler('data', 'blockchain.json', blockchain.chain);
-
-  res.status(201).json(new ResponseModel({ statusCode: 201, data: newTicket }));
+  res.status(201).json({ success: true, data: block });
 };
 
+const getBlockIndex = (req, res, next) => {
+  const index = parseInt(req.params.index);
+  const block = blockchain.chain[index - 1];
 
+  if (!block) {
+    return next(new ErrorResponse(`NO block with the index: ${Index}`, 404));
+  }
 
-export { createBlock, getBlockchain };
+  sendResponse(res, 200, block);
+};
+
+export { createBlock, getBlockchain, getBlockIndex };
