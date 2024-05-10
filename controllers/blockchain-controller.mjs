@@ -31,18 +31,24 @@ const createBlock = (req, res, next) => {
     difficulty
   );
 
-  res.status(201).json({ success: true, data: block });
+  res.status(201).json(new ResponseModel({ statusCode: 201, data: block }));
+  blockchain.writeToFile();
 };
 
-const getBlockIndex = (req, res, next) => {
-  const index = parseInt(req.params.index);
-  const block = blockchain.chain[index - 1];
+const getBlockByIndex = (req, res, next) => {
+  const blockIndex = parseInt(req.params.index);
+  const block = blockchain.chain[blockIndex - 1];
 
   if (!block) {
-    return next(new ErrorResponse(`NO block with the index: ${Index}`, 404));
+    return next(
+      new ErrorResponse(
+        `Couldn't find the block with index: ${blockIndex}`,
+        404
+      )
+    );
   }
 
   sendResponse(res, 200, block);
 };
 
-export { createBlock, getBlockchain, getBlockIndex };
+export { createBlock, getBlockchain, getBlockByIndex };

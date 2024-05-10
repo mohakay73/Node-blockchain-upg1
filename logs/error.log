@@ -52,3 +52,4 @@ Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:05:56 PM Success: u
 Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:05:56 PM Success: undefined - Message: Unexpected token '"', ""index:2"
 " is not valid JSON
 Method: GET Url: /api/v1/blockchain/ Date: 5/6/2024 Time: 10:06:00 PM Success: undefined - Message: Unexpected end of JSON input
+Method: GET Url: /api/v1/blockchain/ Date: 5/10/2024 Time: 10:08:52 PM Success: undefined - Message: Unexpected token 'i', "index:2" is not valid JSON

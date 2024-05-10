@@ -1,7 +1,8 @@
 import { createHash } from '../utilities/crypto-lib.mjs';
 import Block from './Block.mjs';
 import FileHandler from '../utilities/fileHandler.mjs';
-import { handleError, log } from '../middleware/errorHandler.mjs';
+import errorHandler from '../middleware/errorHandler.mjs';
+import logger from '../middleware/logger.mjs';
 
 export default class Blockchain {
   constructor() {
@@ -23,7 +24,7 @@ export default class Blockchain {
     difficulty
   ) {
     if (typeof data !== 'object') {
-      handleError('Data must be an object');
+      errorHandler('Data must be an object');
     }
 
     const block = new Block(
@@ -36,7 +37,7 @@ export default class Blockchain {
     );
 
     this.chain.push(block);
-    log('Block created');
+    logger('Block created');
 
     return block;
   }

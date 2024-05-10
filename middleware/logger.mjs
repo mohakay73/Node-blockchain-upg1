@@ -11,8 +11,6 @@ const logger = (req, res, next) => {
   )}\n`;
 
   fs.appendFileSync(filePath, message);
-
-  next();
 };
 
 export default logger;

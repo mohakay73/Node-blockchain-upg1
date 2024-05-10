@@ -4,7 +4,8 @@
   "description": "Uppgift",
   "main": "server.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
     "start": "node server.mjs",
     "dev": "nodemon server.mjs"
   },

@@ -34,6 +34,14 @@
       "previousBlockHash": "e68c2cfe36c5c4300e7772763e574648ee5669f137aeca941081144bed5a88cc",
       "currentBlockHash": "2241f4981ea41a8d338355570abe4c4f9a6038752546ec12d10b214068dbf180",
       "data": {}
+    },
+    {
+      "timestamp": 1715371751000,
+      "blockIndex": 6,
+      "previousBlockHash": "2241f4981ea41a8d338355570abe4c4f9a6038752546ec12d10b214068dbf180",
+      "currentBlockHash": "52c91ab9fcaad5916c165a12f7b1767a8cde398fe4f7daa47c48273a226b14ca",
+      "data": {},
+      "difficulty": 2
     }
   ]
 }

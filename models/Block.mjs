@@ -12,6 +12,6 @@ export default class Block {
     this.previousBlockHash = previousBlockHash;
     this.currentBlockHash = currentBlockHash;
     this.data = data;
-    this.difficulty = difficulty || process.env.DIFFICULTY;
+    this.difficulty = difficulty || +process.env.DIFFICULTY;
   }
 }
